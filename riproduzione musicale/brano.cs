@@ -21,34 +21,22 @@ namespace riproduzione_musicale
 
         }
 
-        public string getTitolo()
+        public string Titolo
         {
-            return _titolo;
+            get {  return _titolo; }
+            set { _titolo = value; }
         }
 
-        public string getautore()
+        public string Autore
         {
-            return _autore;
+           get{ return _autore; }
+            set { _autore = value; }
         }
 
-        public float getDurata()
+        public float getDurata
         {
-            return _durata;
-        }
-
-        public void setTitolo(string titolo)
-        {
-            _titolo = titolo;
-        }
-
-        public void setAutore(string autore)
-        {
-            _autore = autore;
-        }
-
-        public void setDurata(float durata)
-        {
-            _durata = durata;
+            get { return _durata; }
+            set { _durata = value; }
         }
 
         public bool shortSong(float sogliaDurata)
@@ -61,6 +49,11 @@ namespace riproduzione_musicale
             {
                 return false;
             }
+        }
+
+        public override string ToString()
+        {
+            return _autore + _durata + _titolo;
         }
     }
 }
