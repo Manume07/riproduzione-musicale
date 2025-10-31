@@ -20,5 +20,11 @@ namespace riproduzione_musicale
         {
             InitializeComponent();
         }
+        /*
+        private void bnt_play_Click(object sender, RoutedEventArgs e)
+        {
+            mediaElement.Play();
+        }
+        */
     }
 }
