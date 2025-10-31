@@ -34,10 +34,7 @@ namespace riproduzione_musicale
 
         public override string ToString()
         {
-            string tracks = (_listaDiBrani != null && _listaDiBrani.Any())
-                ? string.Join(Environment.NewLine, _listaDiBrani)
-                : "(nessun brano)";
-            return $"{_titolo} — {_autore}{Environment.NewLine}{tracks}";
+            return  _listaDiBrani.ToString();
         }
 
     }
