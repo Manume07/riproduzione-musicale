@@ -33,7 +33,7 @@ namespace riproduzione_musicale
             set { _autore = value; }
         }
 
-        public float getDurata
+        public float Durata
         {
             get { return _durata; }
             set { _durata = value; }
