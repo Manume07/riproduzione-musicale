@@ -51,9 +51,9 @@ namespace riproduzione_musicale
             }
         }
 
-        public override string ToString()
+        public  string toString()
         {
-            return _autore + _durata + _titolo;
+            return ("Autore: " + _autore+ "Durata: " + _durata + "Titolo: " + _titolo) ;
         }
     }
 }
