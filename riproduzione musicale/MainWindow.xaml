@@ -32,14 +32,14 @@
                 </StackPanel>
                 
                 <!-- Pulsante per aggiungere i brani -->
-                <Button x:Name="btnAggiungiBrano_Click" Content="Aggiungi brano" Width="140" Click="btnAggiungiBrano_Click" Margin="0 0 0 10" VerticalAlignment="Center"/>
+                <Button x:Name="btnAggiungiBrano" Content="Aggiungi brano" Width="140" Click="btnAggiungiBrano_Click" Margin="0 0 0 10" VerticalAlignment="Center"/>
             </StackPanel>
         </GroupBox>
         
         <!--Lista dei brani che vengno creati-->
         <GroupBox Header="Lista Brani" Grid.Row="1" Margin="10">
             <StackPanel Margin="10">
-                <ListBox x:Name="lstBrani" Height="200" Margin="0 0 0 100" SelectionChanged="lstBrani_SelectionChanged"/>
+                <ListBox x:Name="lstBrani" Height="200" Margin="0 0 0 100"/>
             </StackPanel>
         </GroupBox>
     </Grid>
