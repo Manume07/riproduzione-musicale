@@ -16,9 +16,34 @@ namespace riproduzione_musicale
     /// </summary>
     public partial class MainWindow : Window
     {
+        
+        
         public MainWindow()
         {
             InitializeComponent();
         }
+
+        private void btnAggiungiBrano_Click(object sender, RoutedEventArgs e)
+        {
+            
+            string titolo= txtTitolo.Text;
+            string autore= txtAutore.Text;
+            string durata= txtDurata.Text;
+            while (string.IsNullOrEmpty(titolo) || string.IsNullOrEmpty(autore) || string.IsNullOrEmpty(durata))
+            {
+                MessageBox.Show("ERRORE inserire tutti i brani");
+            }
+
+            brano brano = new brano(titolo, autore, durata);
+            lstBrani.Items.Add(brano);
+
+
+
+        }
+
+
+
+
+
     }
 }
