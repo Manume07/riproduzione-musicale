@@ -1,24 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace riproduzione_musicale
 {
-    internal class cd
+    internal class Cd
     {
         private string _titolo;
         private string _autore;
         private List<string> _listaDiBrani;
-        public cd(string titolo, string autore, List<string> listaDiBrani)
+        public Cd(string titolo, string autore, List<string> listaDiBrani)
         {
             _titolo = titolo;
             _autore = autore;
             _listaDiBrani = listaDiBrani;
 
-            
+
         }
 
         public string Titolo
@@ -32,11 +33,9 @@ namespace riproduzione_musicale
             set { _autore = value; }
         }
 
-        public override string ToString()
-        {
-            return  _listaDiBrani.ToString();
-        }
-
+  
+        
+        
     }
-}
+} 
 
