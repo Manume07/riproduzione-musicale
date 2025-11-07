@@ -10,9 +10,9 @@ namespace riproduzione_musicale
     {
         private string _titolo;
         private string _autore;
-        private decimal _durata;
+        private float _durata;
 
-        public brano(string titolo, string autore, decimal durata)
+        public brano(string titolo, string autore, float durata)
         {
 
             _titolo = titolo;
@@ -33,13 +33,13 @@ namespace riproduzione_musicale
             set { _autore = value; }
         }
 
-        public decimal Durata
+        public float Durata
         {
             get { return _durata; }
             set { _durata = value; }
         }
 
-        public bool shortSong(decimal sogliaDurata)
+        public bool shortSong(float sogliaDurata)
         {
             if (_durata < sogliaDurata)
             {
